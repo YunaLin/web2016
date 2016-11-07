@@ -1,0 +1,70 @@
+body {
+	font-family:cursive;
+	width:100%;
+	background:url("images/decoration.jpg");
+	background-repeat:no-repeat;
+}
+h1 {
+	color:green;
+}
+h1, h2{
+	text-align: center;
+}
+h2 {
+	font-size:18px;
+}
+#game {
+	margin-left:35%;
+}
+#mole {
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:420px;
+	height:250px;
+/*	background:url("groud.jpg");*/
+/*	background-color:#228b22;*/
+	overflow:hidden;
+}
+ol {
+	margin-left:370px;
+}
+
+#instruct {
+	margin-left:390px;
+	font-weight: bold;
+	font-size:20px;
+}
+
+#mole div {
+	margin:5px;
+	border-radius:50%;
+	border:1px solid green;
+	width:30px;
+	height:30px;
+	display:block;
+	float:left;
+}
+.appear {
+	background:url("images/mouse.jpg");
+}
+.disappear {
+	background:url("images/hide.jpg");
+}
+#startOrStop {
+	font-size:16px;
+	width:220px;
+}
+#status {
+	font-size:16px;
+	width:215px;
+}
+#time {
+	width:130px;
+}
+#score {
+	width:115px;
+}
+.next {
+	margin-top:-20px;
+}
