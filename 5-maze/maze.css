@@ -1,0 +1,86 @@
+/*use the z-index to make some block appear later to make them together and no border between them*/
+body {
+	font-family:cursive;   /*not sure now, modify when finish*/
+}
+h1, h2 {
+	text-align: center;
+}
+p {	
+	text-align:center;
+	width:530px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#status {
+	font-size:25px;
+}
+#maze {
+	margin:auto;
+	position:relative;
+	width:500px;
+	height:300px;
+}
+.boundary {
+	display:block;
+	border:1px solid black;
+}
+#start, #end {
+	position:absolute;
+	width:40px;
+	height:35px;
+	top:180px;
+	font-size:32px;
+	text-align:center;
+	padding-bottom:8px;
+	border:1px solid black;
+}
+#start {
+	cursor:pointer;
+	background-color:#66ff66;
+}
+#end {
+	background-color:#3355ff;
+	right:0px;  /* it is 1px to the right */
+}
+div.boundary {
+	position:absolute;
+	width:150px;
+	height:170px;
+	border:1px solid black;
+	background-color:#dddddd;
+	z-index:0;
+}
+#maze div.boundary + div.boundary {
+	width:200px;
+	height:80px;
+	border-left:none;
+	border-right:none;
+	left:151px;
+	z-index:1;
+}
+#maze div.boundary + div.boundary + div.boundary {
+	width:150px;
+	height:170px;
+	left:350px;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	z-index:0;
+}
+#maze div.boundary + div.boundary + div.boundary + div.boundary {
+	left:0;
+	top:230px;
+	width:498px;
+	height:70px;
+	z-index:0;
+}
+#maze div.boundary + div.boundary + div.boundary + div.boundary + div.boundary {
+	top:136px;
+	left:200px;
+	width:100px;
+	height:94px;
+	z-index:1;
+	border-bottom:none;
+}
+div.change {
+	background-color:#ff4444;	
+}
