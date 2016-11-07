@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Calculator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="calcss.css" type="text/css" rel="stylesheet" />
+    	<script src="caljs.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="calculator">
+		<p id="head">
+			简单计算器
+		</p>
+		<div class="main">
+		<input type="text" name="txtScreen" id="txtScreen" value="0" readonly="readonly"/>
+		<ul id="ulCal">
+			<li><input type="button" name="btn7" class="btn" value="7" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn8" class="btn" value="8" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn9" class="btn" value="9" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn10" class="btn" value="/" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn4" class="btn" value="4" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn5" class="btn" value="5" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn6" class="btn" value="6" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn11" class="btn" value="*" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn1" class="btn" value="1" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn2" class="btn" value="2" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn3" class="btn" value="3" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn12" class="btn" value="-" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn0" class="btn" value="0" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn13" class="btn" value="." onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn14" class="btn" value="<-" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn15" class="btn" value="+" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn16" class="btn" value="(" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn17" class="btn" value=")" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn18" class="btn" value="CE" onclick="connectContent(this);" /></li>
+			<li><input type="button" name="btn19" id="equal" class="btn" value="=" onclick="connectContent(this);" /></li>
+		</ul>
+		</div>
+		</div>
+	</body>
+</html>

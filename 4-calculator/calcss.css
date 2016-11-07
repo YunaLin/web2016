@@ -1,0 +1,67 @@
+body {
+	border-image-repeat:no-repeat;
+}
+div.calculator {
+	overflow:hidden;
+	margin-left:39%;
+	margin-top:100px;
+}
+.main {
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	width:349px;
+	border-width:2px;
+	border-color:rgb(64, 64, 64);
+	border-style:double;
+	height:300px;
+	overflow:hidden;
+	background-color:#EEFFFF;
+}
+#head {
+	color:green;
+	font-size:30px;
+	margin-left:100px;
+	font-weight:bold;
+}
+#txtScreen{
+	position:absolute;
+	text-align:right;
+	position:relative;
+	width:324px;
+	margin-top:12px;
+	margin-left:10px;
+	margin-right:10px;
+	height:40px;
+	border:2px solid;
+	border-color:rgb(100, 100, 100);
+	overflow:hidden;
+	font-size:22px;
+}
+ul {
+	position:absolute;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:0px;
+	padding:0px;
+	padding-left:0px;
+	padding-right:0px;
+	width:325px;
+	top:60px;
+	overflow:hidden;
+}
+li {
+	list-style-type:none;
+	display:inline-block;
+}
+li .btn {
+	position:relative;
+	border-radius:10px;  /* 可以通过改变这个来改变按键的style  */
+	width:70.2px;
+	height:31px;
+	margin-left:4px;
+	margin-right:1px;
+	margin-top:10px;
+	color:blue;
+	font-size:15px;
+}
