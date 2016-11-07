@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Puzzle Game</title>
+	<link rel="stylesheet" type="text/css" href="css/panda.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+	<script type="text/javascriPT" src="js/panda.js"></script>
+</head>
+<body>
+	<h1>Puzzle Game</h1>    
+	
+	<div id="playArea">
+		<p id = "status"></p> 
+        <div id="mainarea"><!-- 16pieces are append here  --></div>
+
+	    <div class = "timeAndSteps">
+	    	<div class = "displayTime">
+	    		time:
+	    		<input type="text" id = "time"/>
+	    	</div>
+	    	<div class = "displaySteps">
+	    		steps:
+	    		<input type="text" id = "count"/>
+	    	</div>
+	
+	    	<div id="initialPicture" class="puzzle1">
+	    	</div>
+	    </div>
+    </div>
+
+    <div id="start">		
+		<button id="restart">重新开始</button>
+		<select id="difficulty">
+			<option id="easy" value="5">easy</option>
+			<option id="normal" value="20">normal</option>
+			<option id="hard" value="50">hard</option>
+		</select>
+	</div>
+
+	
+</body>
+</html>
