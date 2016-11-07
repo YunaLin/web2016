@@ -1,0 +1,13 @@
+p {
+	font-family: cursive ;
+	font-size:60px;
+	text-align:center;
+	color:blue;
+/*	background-image: url("pictures/background.png");*/
+}
+body {
+	background-image:url("pictures/back.png");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+}

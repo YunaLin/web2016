@@ -1,0 +1,144 @@
+/* 
+Problems: The right-bottom is fixed.
+*/
+
+/* heading */
+h1 {
+    font-size:24pt;
+    font-weight:bold;
+    text-align:center;
+    font-family:Tahoma, Verdana, serif;
+}
+/* total body */
+body {
+    margin:0;
+    background-image:url("images/background.png");
+    font-size:8pt;
+    font-family:Verdana, Tahoma, serif;}
+
+/* banner image*/
+div.top {
+    text-align: center;
+    height:50px;
+    background-image:url("images/bannerbackground.png");
+    background-repeat:repeat-x;
+}
+/* 880px width, center, 4pt gray solid border, sized enough*/
+/* 灰色框部分 */
+div.bodysetting {
+    width:800px;
+    border: 4px solid gray;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;  /*足够大以包含全部的内容*/
+    padding-bottom:10px;
+    padding:0;
+}
+/* 灰色框内顶部的烂评价总览 */
+div.overview {
+    background-image:url("images/rottenbackground.png");
+    background-repeat:repeat-x;
+    height:83px;
+    vertical-align: bottom;
+}
+/* 32% */
+span.word {
+    font-size:48pt;
+    color:red;
+    font-weight:bold;
+    vertical-align: bottom;
+}
+/* (88 reviews total) */
+span.review {
+    font-size:8pt;
+    color:white;
+    vertical-align: 90%;
+}
+/* 评论区小灰框 */
+div.comment {
+    overflow:hidden;
+    float:left;
+    width:550px;
+    line-height: 120%;
+    position:absolute;
+}
+/* rotten */
+img.rotten {
+    float:left;
+    padding-right:5px;
+}
+/* 左右两列评价 */
+div.left, div.right {
+    float:left;
+    width:258.5px;
+    margin-left:11px;
+    margin-right:0px;
+    overflow:hidden;
+}
+/* 评价的文本设置 */
+p.content {
+    padding:8px;
+    font-size: 8pt;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, serif;
+    background-color:#E1D697;
+    border: 2px solid gray;
+    overflow:hidden;
+}
+img.critic {
+    float:left;
+    padding-left:5px;
+    padding-bottom:5px;
+}
+/* 评价框下面的人名等信息　*/
+p.index {
+    float:left;
+    width:238.5px;
+    margin-left:0px;
+    margin-right:26px;
+    padding-right:8px;
+    margin-top:0px;
+    margin-bottom:3em;
+}
+span.publication {
+    font-style:italic;
+}
+/* 列表部分 */
+div.definition {
+    background-color:#A2B964;
+    padding:10px;
+    padding-top:0px;
+    float:right;
+    width:230px;
+}
+/*  右边绿色部分，包括图像一起右浮 */
+div.generalright {
+    float:right;
+    width:250px;
+    background-color:#A2B964;
+    bottom:0;
+}
+dt {
+    font-weight:bold;
+
+}
+div.list > dt{
+    padding-top:1em;
+}
+dl {
+    font-family:Arial, serif;
+}
+/* 底部的绿色部分  */
+p.bottom {
+    text-align:center;
+    background-color:#A2B964;
+    padding:5px;
+    margin:0;
+    clear:both;
+}
+/*  右下角的两个validator */
+div.w3c {
+    position:fixed;
+    bottom:0;
+    right:0;
+}
