@@ -1,0 +1,111 @@
+body {
+	font-family:Cursive;
+}
+h1 {
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: center;
+}
+
+#start {
+	width: 150px;
+	height:40px;
+	margin: auto;
+}
+
+#restart {
+	width: 150px;
+	height: 50px;
+	font-size: 30px;
+	color: white;
+	background-color:#4169e1;
+	font-weight: bold;
+	border-radius:10px;
+}
+#mainarea {
+	position: relative;
+	margin: 10px auto;
+	float: left;
+}
+#status {
+	position: relative;
+	height: 40px;
+	width:150px;
+	margin: auto;
+	margin-bottom:20px;
+	margin-top:20px;
+	font-size: 22px;
+	font-weight: bold;
+	color:#4169e0;
+	font-family:Cursive;
+}
+
+.timeAndSteps {
+	position: relative;
+	margin: 10px 0px;
+	height: 400px;
+	width: 260px;
+	float: right;
+}
+
+.displaySteps, .displayTime {
+	height: 20px;
+	margin: 10px auto;
+	font-size: 20px;
+}
+
+#count, #time {
+	width: 100px;
+	height: 20px;
+	font-size:20px;
+}
+
+
+#initialPicture {
+	position: relative;
+	border:1px solid #888888;
+	width: 250px;
+	height: 250px;
+	margin-top:90px;
+	background-size: 100%;
+	background-image: url(image/panda.jpg);
+}
+
+#playArea {
+	position: relative;
+	width: 850px;
+	height: 480px;
+	margin: 10px auto;
+}
+
+.each {
+	position: absolute;
+	border: 1px solid #888888;
+	font-size: 20px;
+	font-weight: bold;
+	width:88px;
+	height:88px;
+	background-image: url(image/panda.jpg);
+}
+#blank {
+	position: absolute;
+	background-image: none;
+	border: none;
+	transition: none;
+	visibility: hidden;
+}
+
+.canMove {
+	cursor: pointer;
+	border: 2px solid #4169e2;
+}
+
+.canMove:hover {
+	box-shadow:inset 0px 0px 10px;
+	border: 2px solid #00c957;
+}
+#difficulty {
+	width:150px;
+	font-size:20px;
+	border-radius:15px;
+}

@@ -1,0 +1,53 @@
+body {
+	font-family: Georgia;
+}
+thead {
+	background-color:#0D13BF;
+}
+table {
+	border-collapse:collapse;   /*表格错位*/
+}
+th, td {
+	border:1px solid gray;
+}
+tr:nth-child(2) {
+	background-color:#CACBCC;
+}
+thead tr th:hover {
+	cursor:pointer;
+}
+thead tr th {
+	text-align:left;
+	background-image:url("images/descend.png");
+}
+thead tr th.changeColor {
+	background-color:#A1C9D6;
+}
+thead tr th.changeImage {
+	background-image:url("images/ascend.png");
+}
+thead tr th.change, thead tr th {
+	background-repeat:no-repeat;
+	background-position:100% 100%;
+}
+#todo th:nth-child(1), #todo td:nth-child(1) {
+	width:170px;
+}
+#todo th:nth-child(2), #todo td:nth-child(2) {
+	width:100px;
+}
+#todo th:nth-child(3), #todo td:nth-child(3) {
+	width:180px;
+}
+#staff th:nth-child(1), #todo td:nth-child(1) {
+	width:120px;
+}
+#staff th:nth-child(2), #todo td:nth-child(2) {
+	width:100px;
+}
+#staff th:nth-child(3), #todo td:nth-child(3) {
+	width:150px;
+}
+.none {
+	display:none;
+}

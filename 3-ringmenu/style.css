@@ -1,0 +1,267 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+/*  最外面的整体的框架   */
+#at-plus-container {
+	position:fixed;
+	bottom:120px;
+	left:50%;
+	margin-left:-16px;
+
+	width:32px;
+	height:32px;
+
+	transition:all 0.5s;
+	transition-duration:1s;
+}
+#buttom-positioner {
+	position:absolute;
+	top:0;
+	left:0;
+	transition:all 0.5s;
+}
+
+.apd {
+	position:absolute;
+	top:0;
+	left:0;
+	width:32px;
+	height:32px;
+	border-radius:50%;
+	transition:all 0.5s 0.5s;
+}
+/* 最开始小的@  */
+.icon {
+	position:absolute;
+
+	background-image:url("assets/images/atplus_white.png");
+	background-size:26px;
+	background-color:rgb(140, 150, 200);
+	background-repeat:no-repeat;
+	background-position:center;
+
+	width:32px;
+	height:32px;
+	border-radius:50%;
+
+	transition:all 0.5s 0.5s;
+	opacity:1;   /*  不透明度为1   */
+}
+
+#info-bar {
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:32px;
+	height:32px;
+	border-radius:50%;
+	background-color:rgba(0, 0, 10, 4)
+	opacity:0;
+
+	overflow:hidden;
+
+	transition:all 0.5s;
+}
+/* 去掉list前面的小黑点 */
+ul li {
+	list-style-type:none;
+}
+
+.info {
+	transition-timing-function: ease-out;
+	position:relative;
+	width:130px;
+	height:130px;
+}
+
+#info-bar li span {
+	/* 以inline-block的形式展现出来的时候，如果border-width
+	比较小的时候，可以实现多个border平行排列展现  */
+	display:inline-block;
+	vertical-align:text-bottom;
+}
+/* 设置info-bar中各个小部分的内容  */
+ul span {
+	font-weight: bold;
+	margin:7px;
+}
+
+.info li {
+	position:absolute;
+	color:#fff;
+}
+.page {
+	color:#fff;
+    font-weight:bold;
+}
+.user {
+	position:absolute;
+	font-size:15px;
+	left:40px;
+	top:10px;
+}
+.comment {
+	left:35px;
+	top:36px;
+}
+.comment span {
+	font-size:27px;
+	margin-left:7px;
+}
+.posted span , .like span {
+	color:#33CC66;
+}
+.posted {
+	position:relative;
+	bottom:14px;
+	left:20px;
+}
+.like {
+	position:relative;
+	bottom:14px;
+	left:65px;
+}
+.mine {
+	font-weight:900;
+	color:#fff;
+}
+
+/* button  */
+.button {
+	background-color:rgb(120, 120, 120);
+	background-position:center;
+	background-repeat:no-repeat;
+
+	width:32px;
+	height:32px;
+	border-radius:50%;
+
+	transition:all 0.5s;
+}
+
+#control-ring li {
+	position:absolute;
+	left:0;
+	top:0;
+
+	width:32px;
+	height:32px;
+
+	transition:all 0.5s;
+}
+.mask {
+	opacity:0;
+	background-image:url("assets/images/nomask.png");
+}
+.history {
+	opacity:0;
+	background-image:url("assets/images/history.png");
+}
+/* 红色小圆圈显示未读信息数目 */
+.unread {
+    font-size: 10px;
+	text-align: center;
+	padding-top:2px;
+	border-radius: 50%;
+    position: absolute;
+    top: -11px;
+    right: -13px;
+    width: 18px;
+    height: 16px;
+	background-color: red;
+	color: white;
+}
+.message {
+	opacity:0;
+	background-image:url("assets/images/message.png");
+}
+.setting {
+	opacity:0;
+	background-image:url("assets/images/setting.png");
+}
+.sign {
+	opacity:0;
+	background-image:url("assets/images/signin.png");
+}
+
+#at-plus-container:hover #bottom-positioner {
+	top:170px;
+	left:100px;
+	transition:all 0.5s;
+	transition-duration:5s;
+}
+#at-plus-container:hover .icon {
+	background-image:url("assets/images/atplus_green.png");
+	margin-left:-6px;
+	margin-top:-6px;
+	background-size:40px;
+
+	width:50px;
+	height:50px;
+
+	transition:all 0.5s;
+	background-color:rgba(48, 63, 158, 1);
+}
+#at-plus-container:hover #info-bar {
+	/* here  */
+	top:-145px;
+	left:-45px;
+	width:130px;
+	height:130px;
+	transition:all 0.5s;
+	opacity:1;
+	background-color:rgb(120,120,120);
+}
+#at-plue-container:hover #control-ring-container {
+	transition:all 0.5s;
+}
+#at-plus-container:hover .apb {
+	top:-9px;
+	left:-9px;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	transition:all 0.5s;
+}
+/* 当鼠标放到control-ring的各个小圆圈上时，颜色变浅 */
+#control-ring li:hover {
+	background-color:rgb(200,200,200);
+}
+/*  对mask, history, message,setting, sign各个小圆圈的位置进行设置  */
+#at-plus-container:hover .mask {
+	transition:all 0.5s;
+	opacity:1;
+	top:-30px;
+	left:-54px;
+}
+
+#at-plus-container:hover .history {
+	transition:all 0.5s;
+	opacity:1;
+	top:5px;
+	left:-65px;
+}
+
+#at-plus-container:hover .message {
+	transition:all 0.5s;
+	opacity:1;
+	top:43px;
+	left:-54px;
+}
+
+#at-plus-container:hover .setting {
+	transition:all 0.5s;
+	opacity:1;
+	top:68px;
+	left:-23px;
+}
+
+#at-plus-container:hover .sign {
+	transition:all 0.5s;
+	opacity:1;
+	top:70px;
+	left:18px;
+}
